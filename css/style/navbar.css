@@ -1,0 +1,24 @@
+/* navbar by flexbox */ 
+.navbar{
+    display: flex;
+    background-color:white;
+    grid-area: nv;
+    justify-content: center;
+    height: 45px;
+ }
+ 
+ .box {
+     width: 130px;
+     height: auto;
+     text-align: center;
+     align-self: center;
+     justify-content: space-between;
+ } 
+ 
+ a {
+    text-transform: capitalize; 
+    font-family: Times, serif;
+    text-decoration: none;
+    color:teal;
+    font-size: 20px;
+ }

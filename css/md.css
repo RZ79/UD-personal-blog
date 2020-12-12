@@ -1,0 +1,24 @@
+@media (min-width: 250px) and (max-width: 500px)
+{ 
+    .container {
+    margin: 0 auto;
+    grid-template-areas:  
+   "nv"
+   "main"
+   "ft"
+   ;
+  }
+  .main {
+    grid-template-areas:  
+   "cd1 cd1"
+   "cd2 cd2"
+   "cd3 cd3" 
+   "cd4 cd4"
+   "cd5 cd5" 
+   "cd6 cd6"
+   ;
+  }
+ img {
+   width: auto;
+ }
+}

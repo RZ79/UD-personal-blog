@@ -1,0 +1,72 @@
+.main {
+    display: grid;
+    grid-area: main;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-left: 80px solid white;
+    border-right: 80px solid white;
+    text-transform: capitalize; 
+    font-family: Times, serif;
+    background-color:white;
+    grid-template-rows: 600px;
+     grid-template-areas:
+      "cd1 cd1 cd2 cd2 cd3 cd3"
+      "cd4 cd4 cd5 cd5 cd6 cd6 "
+      ; 
+ }
+ figure {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 50% 50%;
+     border-top: 20px solid white;
+     border-bottom: 20px solid white;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: 3fr 1.7fr 1.3fr;
+ }
+ img {
+     display: block;
+      grid-column: 2/3;
+      border: 1px solid white; 
+      width: 1fr;
+      height: 300px;
+ }
+figcaption {
+     grid-column: 2/3;
+     text-align: center;
+ }
+ h3 {
+     padding-top: 10px;
+     color: teal;
+ }
+ p {
+      text-align: justify;
+ }
+ .button{
+      grid-column: 2/3;
+      text-align: center;
+ }
+ button{
+     width: 100px;
+     height: 50px;
+     color: teal;
+     background-color:lightgray;
+     border: 1px solid  white;
+ }
+ #card1 {
+     grid-area: cd1;  
+ }
+ #card2 {
+     grid-area: cd2;
+ }
+ #card3 {
+     grid-area: cd3;
+    }  
+ #card4 {
+     grid-area: cd4;
+    }
+ #card5 {
+     grid-area: cd5;
+    }     
+ #card6 {
+    grid-area: cd6;
+     }

@@ -1,0 +1,43 @@
+@import '../css/style/navbar.css';
+@import '../css/style/main.css';
+@import '../css/style/footer.css';
+.container {
+   display: grid;
+   margin: 0 auto;
+   padding: 0;
+   grid-template-areas:
+   "nv nv nv"
+   "main main main"
+   "ft ft ft"
+}
+footer {
+    display: flex;
+    grid-area: ft;
+    background-color:lightgray;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    color:teal;
+
+}
+
+@media (min-width: 501px) and (max-width: 1200px)
+{ 
+  .container {
+   margin: 0 auto;
+   grid-template-areas:  
+   "nv nv"
+   "main main"
+   "ft ft"
+  }
+  .main {
+   grid-template-areas:  
+   "cd1 cd1 cd2 cd2"
+   "cd3 cd3 cd4 cd4"
+   "cd5 cd5 cd6 cd6"
+   ;
+  }
+  img {
+    width: auto;
+  }
+}
